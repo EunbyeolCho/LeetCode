@@ -1,6 +1,6 @@
 """
 빗물 트래핑
-높이를 입력받아 비 온 후 얼마나 많ㅇ느 물이 쌓일 수 있는지 계산하라.
+높이를 입력받아 비 온 후 얼마나 많은 물이 쌓일 수 있는지 계산하라.
 """
 
 class trap(object):
@@ -33,7 +33,7 @@ class trap(object):
         for i in range(len(height)):
             #변곡점을 만나는 경우
             while stack and height[i] > height[stack[-1]]:
-                
+
                 #스택에서 꺼낸다
                 top = stack.pop()
 
@@ -48,8 +48,6 @@ class trap(object):
             stack.append(i)
 
         return volume
-
-        return
 
 
 if __name__ == '__main__':
