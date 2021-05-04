@@ -1,11 +1,11 @@
 """
+2020.05.04
 팰린드롬 연결 리스트
 연결 리스트가 팰린드롬 구조인지 판별하라.
 """
 import collections
 
 # Definition for singly-linked list.
-
 class ListNode(object):
     def __init__(self, val=0, next=None):
         self.val = val
