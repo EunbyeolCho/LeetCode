@@ -61,7 +61,7 @@ class isPalindrome(object):
             fast = fast.next.next
             rev, rev.next, slow = slow, rev, slow.next
 
-        if fast:
+        if fast: #입력값이 홀수일 때 slow는 한칸 더 가야함
             slow = slow.next
         
         #Determine if palindrome
@@ -77,4 +77,4 @@ if __name__ == '__main__':
     head = ListNode(1,ListNode(2, ListNode(2, ListNode(1, None)))) 
     print(isPalindrome().method1(head))
     print(isPalindrome().method2(head))
-    print(isPalindrome().method3(head)) #best method
+    print(isPalindrome().method3(head)) #best method : 연결리스트를 변환하지 않고 풀이
